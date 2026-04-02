@@ -398,3 +398,12 @@ a {
   gap: 48px;
   padding-left: 240px;
 }
+
+.parts-h1{
+font-weight: 700;
+font-style: Bold;
+font-size: 96px;
+line-height: 100%;
+letter-spacing: 0%;
+color:#55A2A6;
+}

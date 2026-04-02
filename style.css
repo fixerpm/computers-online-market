@@ -7,7 +7,6 @@
 
 body {
   background-color: #000000;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -255,6 +254,14 @@ a {
   width: 100%;
   padding: 20px;
   background-color: #19242A;
+  transition: all 0.3s linear;
+}
+
+.comp-card:hover {
+  transition: all 0.2s linear;
+  background: linear-gradient(90deg, #234383 -26.76%, #55A2A6 105.95%);
+  transform: scale(1.1);
+  color: #ffffff;
 }
 
 .comp-img {
@@ -369,6 +376,13 @@ a {
   border-radius: 20px;
   border-width: 3px;
   border: 3px solid #55A2A6;
+  transition: all .3s linear;
+}
+
+.graphics-card:hover {
+  transition: all .3s linear;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ed4df;
 }
 
 .graphics-img {
@@ -399,11 +413,85 @@ a {
   padding-left: 240px;
 }
 
-.parts-h1{
-font-weight: 700;
-font-style: Bold;
-font-size: 96px;
-line-height: 100%;
-letter-spacing: 0%;
-color:#55A2A6;
+.parts-h1 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #55A2A6;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.parts-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+
+.parts-card {
+  position: relative;
+  width: 560px;
+  height: 320px;
+  border-radius: 20px;
+  border: 3px solid #00eaff;
+  box-shadow: 0 0 15px #00eaff50;
+  display: flex;
+  background: #000000;
+  transition: all .3s linear;
+}
+
+.parts-card img {
+  border-radius: 20px;
+}
+
+.parts-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00eaff;
+}
+
+.parts-card img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parts-h2 {
+  font-weight: 600;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.parts-a {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.content {
+  padding: 32px;
+  color: white;
+}
+
+.content h2 {
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-size: 24px;
+  color: #aaa;
+}
+
+.content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00eaff;
 }

@@ -4,77 +4,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REGSTRATSIYA</title>
+  <title>COMPUTER-SHOP</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href=".//regstrick-qism/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="regstrick" data-aos="zoom-out">
-    <div class="signed-div">
-      <button class="sign-in" data-aos="zoom-in-right"> <a class="div-a" href="#">Sign Up</a></button>
-      <button class="sign-up" data-aos="zoom-in-left"><a class="div-aa" target="_blank" href="./regstrick-qism/signin.html">Sign
-          In</a></button>
-    </div>
-    <div class="sign-div" data-aos="zoom-in">
-<p class="loader"><span>Sign Up For Free</span></p>
-      <div class="nebula-input">
-        <input required="" type="text" name="text" autocomplete="off" class="input" />
-        <label class="user-label">First Name</label>
-        <div class="nebula-particle" style="--x:0.2; --y:-0.4; --delay:0.1s"></div>
-        <div class="nebula-particle" style="--x:0.5; --y:-0.2; --delay:0.3s"></div>
-        <div class="nebula-particle" style="--x:0.3; --y:0.3; --delay:0.5s"></div>
-        <div class="nebula-particle" style="--x:0.7; --y:0.1; --delay:0.2s"></div>
-        <div class="nebula-particle" style="--x:0.1; --y:-0.7; --delay:0.4s"></div>
-        <div class="nebula-particle" style="--x:0.6; --y:0.4; --delay:0.6s"></div>
-      </div>
-      <div class="nebula-input">
-        <input required="" type="text" name="text" autocomplete="off" class="input" />
-        <label class="user-label">Last Name</label>
-        <div class="nebula-particle" style="--x:0.2; --y:-0.4; --delay:0.1s"></div>
-        <div class="nebula-particle" style="--x:0.5; --y:-0.2; --delay:0.3s"></div>
-        <div class="nebula-particle" style="--x:0.3; --y:0.3; --delay:0.5s"></div>
-        <div class="nebula-particle" style="--x:0.7; --y:0.1; --delay:0.2s"></div>
-        <div class="nebula-particle" style="--x:0.1; --y:-0.7; --delay:0.4s"></div>
-        <div class="nebula-particle" style="--x:0.6; --y:0.4; --delay:0.6s"></div>
-      </div>
-      <div class="nebula-input">
-        <input required="" type="email" name="text" autocomplete="off" class="input" />
-        <label class="user-label">Email</label>
-        <div class="nebula-particle" style="--x:0.2; --y:-0.4; --delay:0.1s"></div>
-        <div class="nebula-particle" style="--x:0.5; --y:-0.2; --delay:0.3s"></div>
-        <div class="nebula-particle" style="--x:0.3; --y:0.3; --delay:0.5s"></div>
-        <div class="nebula-particle" style="--x:0.7; --y:0.1; --delay:0.2s"></div>
-        <div class="nebula-particle" style="--x:0.1; --y:-0.7; --delay:0.4s"></div>
-        <div class="nebula-particle" style="--x:0.6; --y:0.4; --delay:0.6s"></div>
-      </div>
-      <div class="nebula-input">
-        <input required="" type="number" name="text" autocomplete="off" class="input" />
-        <label class="user-label">Phone Number</label>
-        <div class="nebula-particle" style="--x:0.2; --y:-0.4; --delay:0.1s"></div>
-        <div class="nebula-particle" style="--x:0.5; --y:-0.2; --delay:0.3s"></div>
-        <div class="nebula-particle" style="--x:0.3; --y:0.3; --delay:0.5s"></div>
-        <div class="nebula-particle" style="--x:0.7; --y:0.1; --delay:0.2s"></div>
-        <div class="nebula-particle" style="--x:0.1; --y:-0.7; --delay:0.4s"></div>
-        <div class="nebula-particle" style="--x:0.6; --y:0.4; --delay:0.6s"></div>
-      </div>
-      <a href="" class="div-a">
-        <!-- From Uiverse.io by nima-mollazadeh -->
-<button class="button">
-  <span>Sign Up</span>
-</button>
+  <header>
+    <div class="container navbar">
+      <a href="./index.html">
+        <img src="./images/Union (2) 2 (1).svg" alt="logo">
       </a>
+      <ul class="nav-links">
+        <li>
+          <a class="ul-a ul-width" href="#">Home</a>
+        </li>
+        <li>
+          <a class="ul-a" href="">Bulk Request</a>
+        </li>
+        <li>
+          <a class="ul-a" href="">About Us</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <form class="form">
+          <label for="search">
+            <input class="input" type="text" required="" placeholder="Search twitter" id="search">
+            <div class="fancy-bg"></div>
+            <div class="search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"
+                class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                <g>
+                  <path
+                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                  </path>
+                </g>
+              </svg>
+            </div>
+            <button class="close-btn" type="reset">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </label>
+        </form>
+      </div>
     </div>
-  </div>
+  </header>
+  <main>
+    <section id="hero">
+      <img class="lenovo-1" data-aos="fade-right" src="./images/lenovo1.png" alt="lenovo">
+      <div data-aos="fade-left" class="comp-info">
+        <h1 class="info-color">ALIENWARE</h1>
+        <h1 class="info-color">NEW MONSTER</h1>
+        <div class="comp-btn">
+          <button class="btn">Explore</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="info">
+      <div data-aos="zoom-in" class="container cards">
+        <div class="card">
+          <img class="card-img" src="./images/truck.png" alt="truck">
+          <p>Express delivery</p>
+        </div>
+        <div class="card">
+          <img class="card-img" src="./images/amout.png" alt="amount">
+          <p>Free shipping & returns</p>
+        </div>
+        <div class="card">
+          <img class="card-img" src="./images/discount.png" alt="discount">
+          <p>Regular customers discount</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sale">
+      <div class="container">
+        <h1 class="comp-text">Special Sale</h1>
+        <div data-aos="zoom-in-down" class="comp-cards">
+          <div class="comp-card">
+            <img class="comp-img" src="./images/lenovo-card1.svg" alt="lenovo">
+            <img src="./images/Line 3.png" alt="line">
+            <h4 class="comp-h4">LENOVO T450</h4>
+            <h4 class="comp-h4">550 AED</h4>
+            <div class="comp-btnn">
+              <a href="./regstrick-qism/1-qism.html">
+                <button class="button">Buy Now</button>
+              </a>
+            </div>
+          </div>
+          <div class="comp-card">
+            <img class="comp-img2" src="./images/lenovo-card2.png" alt="lenovo">
+            <img src="./images/Line 3.png" alt="line">
+            <h4 class="comp-h4">HP 640 G3</h4>
+            <h4 class="comp-h4">575 AED</h4>
+            <div class="comp-btnn">
+              <a href="./regstrick-qism/1-qism.html">
+                <button class="button">Buy Now</button>
+              </a>
+            </div>
+          </div>
+          <div class="comp-card">
+            <img class="comp-img" src="./images/lenovo-card3.png" alt="lenovo">
+            <img src="./images/Line 3.png" alt="line">
+            <h4 class="comp-h4">LENOVO T470S</h4>
+            <h4 class="comp-h4">815 AED</h4>
+            <div class="comp-btnn">
+              <a href="./regstrick-qism/1-qism.html">
+                <button class="button">Buy Now</button>
+              </a>
+            </div>
+          </div>
+          <div class="comp-card">
+            <img class="comp-img" src="./images/lenovo-card4.png" alt="lenovo">
+            <img src="./images/Line 3.png" alt="line">
+            <h4 class="comp-h4">HP 850 G5</h4>
+            <h4 class="comp-h4">810 AED</h4>
+            <div class="comp-btnn">
+              <a href="./regstrick-qism/1-qism.html">
+                <button class="button">Buy Now</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="icon">
+      <h1 class="icon-text">LAPTOPS</h1>
+      <div data-aos="flip-right" class="container">
+        <div class="icon-cards">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="icon-card">
+                <img class="icon-img" src="./images/hp.png" alt="logo">
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon-card">
+                <img class="icon-img" src="./images/asus.jpg" alt="logo">
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon-card">
+                <img class="icon-img" src="./images/apple.png" alt="logo">
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon-card">
+                <img class="icon-img" src="./images/dell.png" alt="logo">
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon-card">
+                <img class="icon-img" src="./images/icon-lenovo.png" alt="logo">
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon-card">
+                <img class="icon-img" src="./images/msi.jpg" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="graphics">
+      <h1 class="graphics-h1">GRAPHICS</h1>
+      <div class="container">
+        <div class="graphics-cards">
+          <img class="graphics-img" src="./images/geforce rtx.png" alt="rtx">
+          <div class="top-div">
+            <div class="graphics-card">
+            <h4 class="graphics-h4">Integrated</h4>
+          </div>
+          <div class="graphics-card">
+            <h4 class="graphics-h4">Discrete</h4>
+          </div>
+          <div class="graphics-card">
+            <h4 class="graphics-h4">eGPU</h4>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        dots: false,
+        autoplayTimeout: 1000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      })
+    </script>
+  </main>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init(
     {
-      duration: 1700,
+      duration: 1000,
+      delay: 1,
     }
   );
 </script>

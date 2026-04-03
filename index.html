@@ -18,8 +18,22 @@
 </head>
 
 <body>
+  <div class="tetris-loader-root">
+    <div class="tetris-loader">
+      <span class="tetris-block">L</span>
+      <span class="tetris-block">O</span>
+      <span class="tetris-block">A</span>
+      <span class="tetris-block">D</span>
+      <span class="tetris-block">I</span>
+      <span class="tetris-block">N</span>
+      <span class="tetris-block">G</span>
+    </div>
+
+    <div class="tetris-loader-text">Loading</div>
+  </div>
+
   <header>
-    <div class="container navbar">
+    <div data-aos-delay="3000" data-aos="fade-down" class="container navbar">
       <a href="./index.html">
         <img src="./images/Union (2) 2 (1).svg" alt="logo">
       </a>
@@ -63,12 +77,14 @@
   </header>
   <main>
     <section id="hero">
-      <img class="lenovo-1" data-aos="fade-right" src="./images/lenovo1.png" alt="lenovo">
-      <div data-aos="fade-left" class="comp-info">
+      <img class="lenovo-1" data-aos="fade-right" data-aos-delay="3000" src="./images/lenovo1.png" alt="lenovo">
+      <div data-aos-delay="3000" data-aos="fade-left" class="comp-info">
         <h1 class="info-color">ALIENWARE</h1>
         <h1 class="info-color">NEW MONSTER</h1>
         <div class="comp-btn">
-          <button class="btn">Explore</button>
+          <a target="_blank" href="https://www.dell.com/en-us/gaming/alienware-laptops">
+            <button class="btn">Explore</button>
+          </a>
         </div>
       </div>
     </section>
@@ -100,7 +116,7 @@
             <h4 class="comp-h4">LENOVO T450</h4>
             <h4 class="comp-h4">550 AED</h4>
             <div class="comp-btnn">
-              <a href="./regstrick-qism/1-qism.html">
+              <a target="_blank" href="https://regstrick.vercel.app/">
                 <button class="button">Buy Now</button>
               </a>
             </div>
@@ -111,7 +127,7 @@
             <h4 class="comp-h4">HP 640 G3</h4>
             <h4 class="comp-h4">575 AED</h4>
             <div class="comp-btnn">
-              <a href="./regstrick-qism/1-qism.html">
+              <a target="_blank" href="https://regstrick.vercel.app/">
                 <button class="button">Buy Now</button>
               </a>
             </div>
@@ -122,7 +138,7 @@
             <h4 class="comp-h4">LENOVO T470S</h4>
             <h4 class="comp-h4">815 AED</h4>
             <div class="comp-btnn">
-              <a href="./regstrick-qism/1-qism.html">
+              <a target="_blank" href="https://regstrick.vercel.app/">
                 <button class="button">Buy Now</button>
               </a>
             </div>
@@ -133,7 +149,7 @@
             <h4 class="comp-h4">HP 850 G5</h4>
             <h4 class="comp-h4">810 AED</h4>
             <div class="comp-btnn">
-              <a href="./regstrick-qism/1-qism.html">
+              <a target="_blank" href="https://regstrick.vercel.app/">
                 <button class="button">Buy Now</button>
               </a>
             </div>
@@ -243,7 +259,52 @@
       </div>
     </section>
 
+    <section id="gaming">
+      <div class="container gaming-card">
+        <div data-aos="flip-left" class="gaming-top">
+          <div class="hero-left">
+            <img src="./images/gamn.png" alt="Gaming Case">
+          </div>
+          <div class="hero-right">
+            <h1>GAMING<br>CASE</h1>
+            <p>
+              Pc Cases for gaming is the frame that contains
+              the components of a computer, including
+              the motherboard, graphics card, power supply,
+              hard drive, and vents, is known as a computer case
+              tower, cabinet, or device unit. Steel, aluminium,
+              and plastic are popular materials for desktop cases
+            </p>
+            <button class="btn"><a href="https://www.amazon.com/gaming-pc-case/s?k=gaming+pc+case">Explore</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="contact">
+      <h1 class="contact-h1">CONTACT US</h1>
+      <div class="container">
+        <div class="contact-cards">
+          <div class="contact-robt">
+            <img class="contact-img" src="./images/robt.png" alt="robot">
+          </div>
+          <div class="contact-form">
+            <form class="contact-size" action="">
+              <input class="contact-input" type="text" placeholder="Full Name">
+              <br>
+              <br>
+              <input class="contact-input" type="email" placeholder="Email">
+              <br>
+              <br>
+              <input class="contact-input" type="number" placeholder="Phone Number">
+              <br>
+              <br>
+              <button class="contact-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="

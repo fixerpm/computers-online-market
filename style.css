@@ -254,12 +254,13 @@ a {
   width: 100%;
   padding: 20px;
   background-color: #19242A;
-  transition: all 0.3s linear;
+  transition: all .3s linear;
 }
 
 .comp-card:hover {
-  transition: all 0.2s linear;
+  transition: all .2s linear;
   background: linear-gradient(90deg, #234383 -26.76%, #55A2A6 105.95%);
+  box-shadow: 0 0 15px #00f2ffca;
   transform: scale(1.1);
   color: #ffffff;
 }
@@ -429,6 +430,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 80px;
+  padding-bottom: 188px;
 }
 
 .parts-card {
@@ -494,4 +496,305 @@ a {
   display: inline-block;
   margin-top: 10px;
   color: #00eaff;
+}
+
+.hero {
+  padding: 50px;
+}
+
+.gaming-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #00bfff;
+  padding: 40px;
+  border-radius: 10px;
+
+  background-image: url(./images/gamingroom.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gaming-card {
+  padding-bottom: 177px;
+}
+
+.hero-left img {
+  width: 610px;
+  height: 670px;
+}
+
+.hero-right {
+  color: #cbd5f5;
+  max-width: 400px;
+}
+
+.hero-right h1 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+
+  color: #a5b4fc;
+  margin-bottom: 20px;
+}
+
+.hero-right p {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.hero-right button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #0432ea00;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-right button:hover {
+  background: #ffc400;
+  color: rgb(255, 255, 255);
+}
+
+.contact-h1 {
+  font-weight: 600;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #C1D0EF;
+  text-align: center;
+  padding-bottom: 73px;
+}
+
+
+.tetris-loader-root {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.25rem 1.5rem;
+  min-width: 13rem;
+  border-radius: 0.9rem;
+
+  background: #111318;
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  animation: loading 1s 2s linear forwards;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+
+}
+
+.tetris-loader {
+  display: flex;
+  gap: 0.35rem;
+  align-items: flex-end;
+}
+
+.tetris-block {
+  --tetris-size: 2.2rem;
+
+  width: var(--tetris-size);
+  height: var(--tetris-size);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #f6f7ff;
+
+  background: linear-gradient(135deg, #5b68ff, #b54dff);
+  border-radius: 0.45rem;
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.7),
+    0 0 0 2px rgba(8, 10, 26, 0.9),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.28);
+
+  transform-origin: center;
+  animation: tetris-loader-drop 2.4s cubic-bezier(0.25, 0.7, 0.2, 1.05) infinite;
+}
+
+.tetris-block:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.tetris-block:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.tetris-block:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.tetris-block:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+.tetris-block:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.tetris-block:nth-child(6) {
+  animation-delay: 0.75s;
+}
+
+.tetris-block:nth-child(7) {
+  animation-delay: 0.9s;
+}
+
+@keyframes tetris-loader-drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-7rem) rotate(-90deg);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(-2rem) rotate(-40deg);
+  }
+
+  55% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  65% {
+    /* bounce */
+    transform: translateY(0.35rem) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.tetris-loader-text {
+  margin-top: 0.9rem;
+  color: #c4cad9;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.contact-img {
+  width: 574px;
+  height: 616px;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 127px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 196px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 12px 36px 0px #3A525F inset;
+  box-shadow: 0px -12px 36px 0px #0F1619 inset;
+  border: 3px solid #07a6dbc3;
+
+  width: 555px;
+  height: 679px;
+  top: 5940px;
+  left: 816px;
+  opacity: 1;
+  border-radius: 20px;
+  border-width: 3px;
+  padding-top: 74px;
+  padding-right: 41px;
+  padding-bottom: 74px;
+  padding-left: 41px;
+  gap: 80px;
+
+}
+
+.contact-size{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.contact-input {
+  border: none;
+  width: 438px;
+  height: 77px;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: #C1D0EF;
+}
+
+.contact-btn {
+  cursor: pointer;
+  width: 189px;
+  height: 60px;
+  opacity: 1;
+  border-radius: 50px;
+  padding-top: 16px;
+  padding-right: 56px;
+  padding-bottom: 16px;
+  padding-left: 56px;
+  gap: 10px;
+  color: #234383;
+  border: none;
+
+font-weight: 500;
+font-style: Medium;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+
 }

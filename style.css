@@ -759,7 +759,7 @@ a {
 
 }
 
-.contact-size{
+.contact-size {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -791,10 +791,55 @@ a {
   color: #234383;
   border: none;
 
-font-weight: 500;
-font-style: Medium;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
 
+}
+
+.line-img {
+  display: flex;
+  justify-content: center;
+  width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 55px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #7f9fdd;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.faq-texts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 140px;
+  padding-bottom: 50px;
+}
+
+.faq-h2 {
+  color: #4a79d6;
+  padding-bottom: 23px;
+}
+
+.logo-text {
+  width: 202px;
+  height: 33px;
+  top: 7008.5px;
+  opacity: 1;
+  color: #C1D0EF;
+  font-weight: 800;
+  font-style: Medium;
+  font-size: 17px;
+  line-height: 100%;
 }

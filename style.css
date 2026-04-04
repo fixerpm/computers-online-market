@@ -510,10 +510,23 @@ a {
   padding: 40px;
   border-radius: 10px;
 
-  background-image: url(./images/gamingroom.jpg);
+  background-image: url(./images/desktop-computers-for-sale\ 1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.gaming-blur {
+  display: flex;
+  gap: 55px;
+  padding: 35px;
+  top: 4791px;
+  left: 48px;
+  border-radius: 20px;
+  opacity: 1;
+
+  background: #000000B2;
+  backdrop-filter: blur(22px)
 }
 
 .gaming-card {
@@ -523,6 +536,11 @@ a {
 .hero-left img {
   width: 610px;
   height: 670px;
+  transition: all 0.4s linear;
+}
+
+.hero-left:hover img {
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 1)) drop-shadow(0 0 20px rgba(255, 0, 255, 0.8));
 }
 
 .hero-right {
@@ -539,11 +557,11 @@ a {
 
 
   color: #a5b4fc;
-  margin-bottom: 20px;
+  padding-bottom: 64px;
 }
 
 .hero-right p {
-  margin-bottom: 20px;
+  padding-bottom: 64px;
   font-weight: 500;
   font-style: Medium;
   font-size: 24px;
@@ -740,23 +758,33 @@ a {
   align-items: center;
   justify-content: center;
 
-  box-shadow: 0px 12px 36px 0px #3A525F inset;
-  box-shadow: 0px -12px 36px 0px #0F1619 inset;
-  border: 3px solid #07a6dbc3;
-
+  position: relative;
   width: 555px;
   height: 679px;
-  top: 5940px;
-  left: 816px;
-  opacity: 1;
+  padding: 40px 30px;
   border-radius: 20px;
-  border-width: 3px;
-  padding-top: 74px;
-  padding-right: 41px;
-  padding-bottom: 74px;
-  padding-left: 41px;
-  gap: 80px;
 
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+  box-shadow:
+    0 0 40px rgba(0, 200, 255, 0.15),
+    inset 0 0 30px rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(circle at bottom, rgba(0, 150, 255, 0.3), transparent 70%);
+  z-index: -1;
 }
 
 .contact-size {

@@ -753,6 +753,19 @@ a {
   padding-bottom: 196px;
 }
 
+.contact-form:hover {
+  transition: all .3s linear;
+  box-shadow:
+    0 0 40px rgb(0, 200, 255),
+    inset 0 0 30px rgba(0, 0, 0, 0.363);
+
+}
+
+.contact-input:hover {
+  transition: all .2s linear;
+  box-shadow: 0 0 20px #306277;
+}
+
 .contact-form {
   display: flex;
   align-items: center;
@@ -771,6 +784,8 @@ a {
     inset 0 0 30px rgba(255, 255, 255, 0.05);
 
   backdrop-filter: blur(10px);
+
+  transition: all .2s linear;
 
   display: flex;
   flex-direction: column;
@@ -803,6 +818,7 @@ a {
   border-radius: 20px;
   padding: 25px;
   background-color: #C1D0EF;
+  transition: all .2s linear;
 }
 
 .contact-btn {
